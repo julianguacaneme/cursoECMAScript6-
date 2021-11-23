@@ -3,20 +3,18 @@
 //que aun no se ha construido
 
 const obj = {
-  name: "Julian",
-  age: 43,
-  country: "Colombia",
+    name: "Julian",
+    age: 43,
+    country: "Colombia",
 };
 
 let { name, ...all } = obj; //operador de reposo
 console.log(name, all);
 
-//
-
 const obj = {
-  name: "Julian",
-  age: 43,
-  country: "Colombia",
+    name: "Julian",
+    age: 43,
+    country: "Colombia",
 };
 
 let { country, ...all } = obj; //operador de reposo
@@ -25,13 +23,13 @@ console.log(all); //resultado { name: 'Julian', age: 43 }
 //UNIDADES DE PROPAGACIÓN: unir elementos de objetos a uno nuevo
 
 const obj = {
-  name: "Julián",
-  age: 32,
+    name: "Julián",
+    age: 32,
 };
 
 const obj1 = {
-  ...obj,
-  country: "CO",
+    ...obj,
+    country: "CO",
 };
 
 console.log(obj1); //resultado { name: 'Julián', age: 32, country: 'CO' }
@@ -41,16 +39,15 @@ console.log(obj1); //resultado { name: 'Julián', age: 32, country: 'CO' }
 
 const helloWord = () => {
     return new Promise((resolve, reject) => {
-        (true)
-        ? setTimeout(() => resolve('Hello world'), 3000)
-        : reject(new Error('Test error'))
+        (true) ?
+        setTimeout(() => resolve('Hello world'), 3000): reject(new Error('Test error'))
     });
 };
 
-helloWord() 
-.then(response => console.log(response))
-.catch(error => console.log(error))
-.finally(() => console.log('Finalizo'))
+helloWord()
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+    .finally(() => console.log('Finalizo'))
 
 //agrupar bloque de regex
 
@@ -61,5 +58,3 @@ const month = match[2]
 const day = match[3]
 
 console.log(year, month, day);
-
-
