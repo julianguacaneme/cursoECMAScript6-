@@ -11,7 +11,7 @@ console.log(replaceString2);
 
 //METODOS PRIVADOS
 
-class Message {#
+class Message {
     show(val) {
         console.log(val);
     };
